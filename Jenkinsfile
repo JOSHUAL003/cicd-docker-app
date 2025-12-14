@@ -35,13 +35,6 @@ pipeline {
   }
 
   stages {
-
-    stage('Checkout Code') {
-      steps {
-        git 'https://github.com/JOSHUAL003/cicd-flask-app.git'
-      }
-    }
-
     stage('Install and Test (Parallel)') {
       parallel {
 
